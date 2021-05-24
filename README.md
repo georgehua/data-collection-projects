@@ -15,9 +15,9 @@ Collection of data collection projects with web scraping and API tools. Includin
 
 When I was looking for jobs on the LinkedIn job board, I found the built-in sorting system didn't provide enough functionalities to help me choose the most suitable jobs to apply to. And I was thinking to extract job descriptions from the LinkedIn platform and built my personal job boards. The first thing I need to start is collecting data from LinkedIn.
 
-Firstly, I went to the LinkedIn API, but the provided API endpoints are very limited. So, I decided to scrape the data with BeautifulSoup and Selenium. This notebook is the demonstration of setting up an extraction pipeline for searching data analyst position in Canada. I fetched the data using a headless browser to simulate human browsing behavior, then formatted and saved the data into a pandas data frame, eventually exporting it to a CSV file.
+So, I went to the LinkedIn API documentation, but didn't find any luck from there, since the provided API endpoints are very limited. So, I decided to scrape the data with BeautifulSoup and Selenium. This notebook is the demonstration of setting up an extraction pipeline for searching `data analyst` position in `Greater Toronto Area, Canada`. I fetched the data using a headless browser to simulate human browsing behavior, then formatted and saved the data into a pandas data frame, eventually exporting it to a CSV file.
 
-After running the below code, we will get the following information about the job posting:
+After running the pipeline, we will get the following information about the job posting:
 
 - Date
 - Title
@@ -32,7 +32,7 @@ After running the below code, we will get the following information about the jo
 
 
 
-**Saved Results:**
+**Example Saved Results:**
 
 | Job ID     | Date       | Company Name | Post                  | Location                     | Description                                                  | Level            | Type      | Function                           | Industry                                                     |
 | ---------- | ---------- | ------------ | --------------------- | ---------------------------- | ------------------------------------------------------------ | ---------------- | --------- | ---------------------------------- | ------------------------------------------------------------ |
