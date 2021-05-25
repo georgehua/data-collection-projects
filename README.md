@@ -1,6 +1,6 @@
 # Data Collection Projects
 
-Before building fancy machine learning models or performing data analysis processes, data collection is always the foundation of any data science project. In this repository, I put my data collection projects here which built with either web scraping or API tools. Most common tools I used: **BeautifulSoup, Selenium, Python, API**. And the data source I worked on are: **LinkedIn** job post and **Twitter**
+Before building fancy machine learning models or performing data analysis processes, data collection is always the foundation of any data science project. In this repository, I put my data collection projects here which built with either web scraping or API tools. Most common tools I used: **BeautifulSoup, Selenium, Python, API**. And the data sources I worked on are: **LinkedIn** job post and **Twitter**
 
 
 
