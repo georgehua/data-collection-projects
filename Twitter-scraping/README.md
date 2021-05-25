@@ -36,7 +36,7 @@ The maximum number of requests that are allowed is based on a time interval, som
 
 **Example Results:**
 
-<img src="D:\coding-ground\web-scraping-projects\docs\figures\twitter_results.png">
+<img src="../docs/figures/twitter_results.png">
 
 
 
