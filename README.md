@@ -4,6 +4,10 @@ No matter how fancy the machine learning or deep learning models you have, the d
 
 
 
+Table of Contents:
+
+<!-- START doctoc -->
+<!-- END doctoc -->
 
 
 
@@ -60,11 +64,14 @@ After running the pipeline, we will get the following information about the job 
 
 **Tools Used:** BeautifulSoup, Selenium, chromedriver, Python (pandas)
 
-**Repository**: https://github.com/georgehua/data-collection-projects/tree/main/LinkedIn-scraping
+**Repository**: https://github.com/georgehua/data-collection-projects/tree/main/Twitter-scraping
 
-**Notebook URL**: https://georgehua.github.io/data-collection-projects/Linkedin.html
+**Demo Notebook URL:** 
 
-**Availability Check:** 2021-05-24
+- Tweepy: https://georgehua.github.io/data-collection-projects/Tweepy.html
+- Scweet: https://georgehua.github.io/data-collection-projects/Scweepy_example.html
+
+**Availability Check:** 2021-04-30
 
 **About the Project:** Each day Twitter generates a massive amount of data, and there's a lot of opportunities to analyze those tweets for different researches. But before doing all sorts of studies, the first step is always to collect data from Twitter. This repository evaluates different libraries or approaches to fetch data from Twitter. I also built demo programs to set up the pipeline from requesting data to parsing and save to ready-to-use CSV file.
 
@@ -72,7 +79,7 @@ After running the pipeline, we will get the following information about the job 
 
 ### Approach 1: Official Twitter API Wrapper (Reliable, but has query limitation)
 
-**Tweepy** (https://www.tweepy.org/) (Availability checked at 2021-04-30)
+**Tweepy** (https://www.tweepy.org/) 
 
 Tweepy is a Python library for accessing the Twitter API. It is great for simple automation and creating twitter bots. Tweepy has many features. Some main functionality it covers:
 
@@ -82,10 +89,6 @@ Tweepy is a Python library for accessing the Twitter API. It is great for simple
 - **Query tweets**
 
 The maximum number of requests that are allowed is based on a time interval, some specified period or window of time. The most common request limit interval is 15 minutes. If an endpoint has a rate limit of 900 requests/15-minutes, then up to 900 requests over any 15-minute interval is allowed.
-
-
-
-**Demo set up Link: https://georgehua.github.io/twitter-scrapper/Tweepy.html**
 
 
 
@@ -100,10 +103,6 @@ Scweet scrap tweets between two given dates (start_date and max_date), for a giv
 ```
 
 Scweet uses headless browser (selenium) to scrape data. Authentication is required in the case of followers/following scraping. It is recommended to log in with a new account (if the list of followers is very long, it is possible that your account will be banned).
-
-
-
-**Demo set up Link: https://georgehua.github.io/twitter-scrapper/Scweepy_example.html**
 
 
 
