@@ -6,8 +6,19 @@ No matter how fancy the machine learning or deep learning models you have, the d
 
 Table of Contents:
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [LinkedIn Job Post Scraping](#linkedin-job-post-scraping)
+- [Twitter Scraping](#twitter-scraping)
+  - [Approach 1: Official Twitter API Wrapper (Reliable, but has query limitation)](#approach-1-official-twitter-api-wrapper-reliable-but-has-query-limitation)
+    - [Tweepy](#tweepy)
+  - [Approach 2: Browser scripting tool (Unreliable, but no/few query limitation)](#approach-2-browser-scripting-tool-unreliable-but-nofew-query-limitation)
+    - [Scweet](#scweet)
+    - [twitterscraper  (Not Available anymore)](#twitterscraper--not-available-anymore)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 
@@ -79,7 +90,9 @@ After running the pipeline, we will get the following information about the job 
 
 ### Approach 1: Official Twitter API Wrapper (Reliable, but has query limitation)
 
-**Tweepy** (https://www.tweepy.org/) 
+#### Tweepy 
+
+Official Website: https://www.tweepy.org/
 
 Tweepy is a Python library for accessing the Twitter API. It is great for simple automation and creating twitter bots. Tweepy has many features. Some main functionality it covers:
 
@@ -92,9 +105,19 @@ The maximum number of requests that are allowed is based on a time interval, som
 
 
 
+**Example Results:**
+
+<img src="docs/figures/twitter_results.png">
+
+
+
 ### Approach 2: Browser scripting tool (Unreliable, but no/few query limitation)
 
-**Scweet** (https://github.com/Altimis/Scweet) (Availability checked at 2021-04-30)
+
+
+#### Scweet
+
+Official Repository: https://github.com/Altimis/Scweet
 
 Scweet scrap tweets between two given dates (start_date and max_date), for a given language and list of words or account name, and saves a csv file containing scraped data :
 
@@ -106,11 +129,18 @@ Scweet uses headless browser (selenium) to scrape data. Authentication is requir
 
 
 
-**twitterscraper** (https://github.com/taspinar/twitterscraper) (Not Available anymore)
+**Example Results:**
+
+| UserScreenName |     UserName |                Timestamp |                                              Text | Embedded_text | Emojis | Comments | Likes | Retweets |                                        Image link |                                       Tweet URL |
+| -------------: | -----------: | -----------------------: | ------------------------------------------------: | ------------: | -----: | -------: | ----: | -------: | ------------------------------------------------: | ----------------------------------------------: |
+|   sukhbir kaur | @sukhbxrkaur | 2020-04-01T04:19:03.000Z | Sunnybrook Hospital.\n#COVID19 #Coronavirusont... |               |        |        4 |    39 |       18 | [https://pbs.twimg.com/media/EUfacJbWAAIVi9A?f... | https://twitter.com/sukhbxrkaur/status/1245204. |
+
+
+
+#### twitterscraper  (Not Available anymore)
+
+Official Repository: https://github.com/taspinar/twitterscraper
 
 A simple script to scrape Tweets using the Python package `requests`†to retrieve the content and `Beautifulsoup4` †to parse the retrieved content.
 
 Twitter banned the tool at late 2020.
-
-
-
